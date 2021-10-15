@@ -1,6 +1,4 @@
 <?php
-
-
 namespace MAM\Plugin\Services\Frontend;
 
 
