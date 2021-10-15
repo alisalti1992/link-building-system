@@ -1,0 +1,23 @@
+{
+  "name": "moveaheadmedia/link-building-system",
+  "description": "Use to manage our Link building clients and link building resources easily and more effectively to make it easier for everyone to manage the clients and the resources in hand.",
+  "minimum-stability": "dev",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Ali",
+      "email": "ali@moveaheadmedia.co.uk"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MAM\\Plugin\\" : "inc/"
+    }
+  },
+  "require": {
+    "ext-curl": "*",
+    "ext-json": "*",
+    "parsecsv/php-parsecsv": "^1.0@dev"
+  }
+}
