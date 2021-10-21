@@ -3,6 +3,8 @@
 
 namespace MAM\Plugin;
 
+use MAM\Plugin\Services\API\Resources;
+use MAM\Plugin\Services\Admin\Authentication;
 use MAM\Plugin\Services\Admin\Enqueue as EnqueueAdmin;
 use MAM\Plugin\Services\Frontend\Enqueue as EnqueueFrontend;
 
@@ -12,10 +14,12 @@ final class Init
      * Store all the classes inside an array
      * @return array Full list of classes
      */
-    public static function get_services()
+    public static function get_services(): array
     {
         return [
+            Resources::class,
             EnqueueAdmin::class,
+            Authentication::class,
             EnqueueFrontend::class,
         ];
     }

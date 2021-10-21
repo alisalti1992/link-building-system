@@ -4,6 +4,8 @@
 namespace MAM\Plugin;
 
 // Singleton class
+use ORM;
+
 class Config
 {
 
@@ -30,6 +32,16 @@ class Config
     public $actual_url;
 
     /**
+     * @var int API Version used to get the current API version
+     */
+    public $api_version;
+
+    /**
+     * @var string API Name space used to get the current namespace
+     */
+    public $api_namespace;
+
+    /**
      * @var Config Used for singleton class setup
      */
     private static $instance;
@@ -43,6 +55,8 @@ class Config
         $this->plugin_path = plugin_dir_path(__DIR__);
         $this->plugin_basename = plugin_basename(plugin_dir_path(__DIR__) . '/mam-reaxml-properties.php');
         $this->currencies = $this->get_currencies();
+        $this->api_version = 1;
+        $this->api_namespace = 'lbs/v' . $this->api_version;
         $this->actual_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     }
 

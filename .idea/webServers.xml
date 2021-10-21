@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0f270f0a-9b87-49f3-b94c-60da044f47fa" name="Local Test Env" url="http://link-building-system-test-env.local/">
+        <fileTransfer mountedRoot="C:\Users\watch\Local Sites\link-building-system-test-env\app\public" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -16,8 +16,7 @@
     }
   },
   "require": {
-    "ext-curl": "*",
-    "ext-json": "*",
-    "parsecsv/php-parsecsv": "^1.0@dev"
+    "parsecsv/php-parsecsv": "^1.0@dev",
+    "j4mie/idiorm": "dev-master"
   }
 }
